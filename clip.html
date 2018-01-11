@@ -82,6 +82,13 @@
                      }
                      i += 1;
                      hl = all_hl.shift();
+                     
+                     if (hl.Text[hl.Text.length-1].match(/[,;.]/)) {
+                         hl.Text = hl.Text.slice(0, hl.Text.length-1) + '.';
+                     } else {
+                         hl.Text = hl.Text + '.';
+                     }
+                     hl.Text = hl.Text.charAt(0).toUpperCase() + hl.Text.slice(1);
 
                      ul.append('li')
                        .text(hl.Text + ' (' + hl.Start + '-' + hl.End + ')');
