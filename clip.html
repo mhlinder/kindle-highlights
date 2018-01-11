@@ -27,94 +27,132 @@
                             .attr('class', 'row')
                             .append('ul');
 
-         d3.json('bib.json', function(bib) {
-             var citations = Object.keys(bib),
-                 count = 0,
-                 k = 3, // Number of columns
-                 i = 0, // Column counter
-                 j, // Highlight count
-                 citation, citation0,
-                 title, author,
-                 row, columns, column,hl, all_hl,
-                 ul;
+         class Grid {
+             constructor (container, nav) {
+                 this.container = container;
+                 this.nav = nav;
+                 
+                 this.row = null;
+                 this.nrow = 0;
+                 
+                 this.w = 3;
+                 this.h = 10;
+                 this.width = 'four';
+                 
+                 this.columns = [];
+                 this.add_row();
+                 
+                 this.ix_column = 1;
+             }
 
-             class Grid {
-                 constructor (container) {
-                     this.container = container;
-                     this.row = null;
-                     this.k = 3;
-                     this.width = 'four';
-                     this.nrow = 0;
-                     this.columns = [];
-                 }
-
-                 add_row() {
-                     // Add a new row
-                     this.row =
-                         this.container
-                             .append('div')
-                             .attr('class', 'row clip');
-                     this.nrow += 1;
-                     // Populate the correct number of rows
-                     this.columns = [];
-                     for (var i = 0; i < this.k; i += 1) {
-                         this.columns
-                             .push(this.row
-                                       .append('div')
-                                       .attr('class', this.width + ' columns'));
-                     }
+             add_row() {
+                 // Add a new row
+                 this.row =
+                     this.container
+                         .append('div')
+                         .attr('class', 'row clip');
+                 this.nrow += 1;
+                 
+                 // Populate empty columns
+                 this.columns = [];
+                 for (var i = 0; i < this.w; i += 1) {
+                     this.columns
+                         .push(this.row
+                                   .append('div')
+                                   .attr('class', this.width + ' columns'));
                  }
              }
 
-             var g = new Grid(container);
+             add_source(id, title, author, all_hl) {
+                 var i = 0,
+                     select_id = 'citation' + id,
+                     hl, column, ul;
+                 this.nav
+                     .append('li')
+                     .attr('id', 'nav-' + id)
+                     .append('span')
+                     .html('<a href="#' + select_id + '">' +
+                           title + '</a> (' + author + ')');
 
-             while (citations.length) {
-                 count += 1;
-                 i += 1;
-
-                 if (i == 1) {
-                     g.add_row();
-                 }
-
-                 column = g.columns[i-1];
-                 column.attr('id', 'citation-' + count);
-
-                 // Parse a citation
-                 citation = citations.shift();
-                 // The regex matches strings of the form
-                 //   .*(Last, First)$
-                 // and reorders the names.
-                 citation0 = citation.replace(/\(([\w.]+), ([\w. ]+)\)$/, '($2 $1)')
-                 
-                 // Remove everything after the final '('
-                 title = citation0.replace(/ \([\w. ]*\)$/, '');
-                 
-                 // Remove everything before the final '('
-                 author = citation0.replace(/.*\(([\w. ]+)\)$/, '$1');
-                 
-                 nav.append('li')
-                    .attr('id', 'nav-' + count)
-                    .append('span')
-                    .html('<a href="#citation-' + count + '">' +
-                          title + '</a> (' + author + ')');
-
-                 column.append('h2').text(title);
-                 column.append('h3').text(author);
-                 ul = column.append('ul');
-                 
-                 all_hl   = bib[citation];
-                 
                  while (all_hl.length) {
+                     if (i == 0) {
+                         column = this.get_column();
+                         this.label_column(column, title, author, select_id);
+                         ul = column.append('ul');
+                     }
+                     i += 1;
                      hl = all_hl.shift();
 
                      ul.append('li')
                        .text(hl.Text + ' (' + hl.Start + '-' + hl.End + ')');
+
+                     // If we've reached the end, add a new one
+                     if (i == this.h) {
+                         column.append('a').text('Top').attr('href', '#main');
+                         i = 0;
+                         this.next_column();
+                     }
                  }
                  column.append('a').text('Top').attr('href', '#main');
+                 this.next_column();
+             }
 
-                 if (i == 3) {
-                     i = 0;
+             get_column() {
+                 return this.columns[this.ix_column-1];
+             }
+
+             label_column(column, title, author, select_id) {
+                 column.append('h2').text(title);
+                 column.append('h3').text(author);
+                 if (select_id !== undefined) {
+                     column.attr('id', select_id);
                  }
+             }
+
+             next_column() {
+                 this.ix_column += 1;
+                 if (this.ix_column > this.w) {
+                     this.add_row();
+                     this.ix_column = 1;
+                 }
+             }
+         }
+
+         var g = new Grid(container, nav);
+
+         var parse_citation = function(citation) {
+             // The regex matches strings of the form
+             //   .*(Last, First)$
+             // and reorders the names.
+             citation = citation.replace(/\(([\w.]+), ([\w. ]+)\)$/, '($2 $1)')
+             
+             // Remove everything after the final '('
+             var title = citation.replace(/ \([\w. ]*\)$/, ''),
+                 // Remove everything before the final '('
+                 author = citation.replace(/.*\(([\w. ]+)\)$/, '$1');
+
+             return {
+                 title: title,
+                 author: author
+             }
+         }
+
+         d3.json('bib.json', function(bib) {
+             var citations = Object.keys(bib),
+                 count = 0,     // Count for citations
+                 raw_citation,  // Citation string provided by Kindle
+                 citation,      // An object with a title and an author
+                 all_hl;        // An array of highlights
+
+             while (citations.length) {
+                 count += 1;
+                 // Parse citation
+                 raw_citation = citations.shift();
+                 citation = parse_citation(raw_citation);
+                 
+                 all_hl   = bib[raw_citation];
+
+                 g.add_source(count, citation.title, citation.author, all_hl)
              }
          });
         </script>
