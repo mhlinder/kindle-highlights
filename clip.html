@@ -42,22 +42,26 @@
                  constructor (container) {
                      this.container = container;
                      this.row = null;
+                     this.k = 3;
+                     this.width = 'four';
                      this.nrow = 0;
                      this.columns = [];
                  }
 
                  add_row() {
+                     // Add a new row
                      this.row =
                          this.container
                              .append('div')
                              .attr('class', 'row clip');
                      this.nrow += 1;
+                     // Populate the correct number of rows
                      this.columns = [];
-                     for (var i = 0; i < 3; i += 1) {
+                     for (var i = 0; i < this.k; i += 1) {
                          this.columns
                              .push(this.row
                                        .append('div')
-                                       .attr('class', 'four columns'));
+                                       .attr('class', this.width + ' columns'));
                      }
                  }
              }
