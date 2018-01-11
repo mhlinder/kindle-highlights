@@ -1,0 +1,386 @@
+
+---------------------------
+  Brontës (Juliet Barker)
+---------------------------
+
+'gables and stone mullioned windows, built by wealthy yeomen'
+(1752-1752, 2017-09-04 22:16:09)
+
+------------------------------------
+  H Is for Hawk (Macdonald, Helen)
+------------------------------------
+
+'in a riot of saffron and bronze. Her talons gripped' (484-484,
+2017-11-19 20:01:39)
+
+'has forgotten, then bounces back onto the perch with brio,'
+(1456-1456, 2017-12-10 17:42:23)
+
+'photographs of White much later in his life: a corpulent,'
+(1509-1510, 2017-12-10 17:46:54)
+
+------------------------------------------------------------------
+  JavaScript Patterns: Build Better Applications with Coding and
+  Design Patterns (Stefanov, Stoyan)
+------------------------------------------------------------------
+
+'patterns are templates for solving categories of problems.' (17-18,
+2018-01-03 08:24:27)
+
+'Patterns also help us communicate better by simply providing a common
+vocabulary.' (20-21, 2018-01-03 08:24:46)
+
+'a template for solving categories of problems.' (116-116, 2018-01-03
+08:28:15)
+
+'And one last thing to keep in mind is that there are two main types
+of objects: Native Described in the ECMAScript standard Host Defined
+by the host environment (for example, the browser environment)'
+(158-161, 2018-01-03 08:32:26)
+
+'There are no classes in JavaScript.' (168-169, 2018-01-03 08:32:45)
+
+'create objects out of available pieces you have lying around,'
+(178-179, 2018-01-03 08:33:53)
+
+'the prototype is an object (not a class or anything special) and
+every function has a prototype property.' (189-190, 2018-01-03
+08:34:36)
+
+'Version 5 adds some new built-in objects, methods, and properties to
+the language, but its most important addition is the so-called strict
+mode, which actually removes features from the language, making the
+programs simpler and less error-prone.' (201-203, 2018-01-03 08:36:23)
+
+'ES5 is a transitional version — developers are encouraged, but not
+forced, to write code that works in strict mode.' (212-213, 2018-01-03
+08:36:47)
+
+'To avoid clutter, some code snippets skip it, too, and assume you"re
+testing the code in the console: window.name === window['name']; //
+true This is as if we used the following: console.log(window.name ===
+window['name']); and it printed true in the console.' (243-247,
+2018-01-03 08:39:20)
+
+'It"s therefore critical to reduce the time it takes to understand
+code, either written by yourself some time ago or written by another
+developer in the team.' (261-262, 2018-01-03 09:21:52)
+
+'Maintainable code means code that: Is readable Is consistent Is
+predictable Looks as if it was written by the same person Is
+documented' (273-275, 2018-01-03 09:22:34)
+
+'JavaScript has the notion of implied globals, meaning that any
+variable you don"t declare becomes a property of the global object'
+(302-303, 2018-01-03 09:24:33)
+
+'after calling the function you end up with one more variable result
+in the global namespace that can be a source of problems.' (306-308,
+2018-01-03 09:25:02)
+
+'Another antipattern that creates implied globals is to chain
+assignments as part of a var declaration.' (311-312, 2018-01-03
+09:26:29)
+
+'If you"ve already declared the variables, chaining assignments is
+fine and doesn"t create unexpected globals' (320-320, 2018-01-03
+09:26:42)
+
+'implied globals are technically not real variables, but they are
+properties of the global object.' (332-333, 2018-01-03 09:27:46)
+
+'the global object is accessible from any part of the code via the
+window property' (340-341, 2018-01-03 09:28:40)
+
+'If you need to access the global object without hard-coding the
+identifier window, you can do the following from any level of nested
+function scope: var global = (function () {     return this; }());'
+(343-346, 2018-01-03 09:28:50)
+
+'This is actually no longer the case in ECMAScript 5 in strict mode,
+so you have to adopt a different pattern when your code is in strict
+mode.' (348-349, 2018-01-03 09:29:16)
+
+'Using a single var statement at the top of your functions is a useful
+pattern to adopt.' (352-353, 2018-01-03 09:29:37)
+
+'and declare multiple variables delimited by commas. It"s a good
+practice to also initialize the variable with an initial value at the
+time you declare it.' (362-363, 2018-01-03 09:30:04)
+
+'For JavaScript, as long as a variable is in the same scope (same
+function), it"s considered declared, even when it"s used before the
+var declaration' (375-376, 2018-01-03 09:31:26)
+
+'A problem with this pattern is that the length of the array is
+accessed on every loop iteration.' (400-401, 2018-01-03 09:32:53)
+
+'That"s why a better pattern for for loops is to cache the length of
+the array (or collection) you"re iterating over, as shown in the
+following example: for (var i = 0, max = myarray.length; i < max; i++)
+{     // do something with myarray[i] }' (414-417, 2018-01-03
+09:34:43)
+
+'One last tweak to the loop would be to substitute i++ with either one
+of these expressions: i = i + 1 i += 1' (432-434, 2018-01-03 09:36:31)
+
+'for-in loops should be used to iterate over nonarray objects. Looping
+with for-in is also called enumeration' (448-450, 2018-01-03 09:38:00)
+
+'it"s best if you don"t augment built-in prototypes' (497-498,
+2018-01-03 09:41:18)
+
+'Ending the switch with a default: to make sure there"s always a sane
+result even if none of the cases matched.' (518-519, 2018-01-03
+09:42:40)
+
+'And what about variables that are not functions? Developers commonly
+use lower camel case for variable names, but another good idea is to
+use all lowercase words delimited by an underscore: for example,
+first_name, favorite_bands, and old_company_name. This notation helps
+you visually distinguish between functions and all other identifiers —
+primitives and objects.' (696-700, 2018-01-03 09:57:44)
+
+'use an underscore prefix to denote a private method or property.'
+(712-712, 2018-01-03 09:59:16)
+
+'the obvious: every single variable or every single line. But you
+usually need to document all functions, their arguments and return
+values, and also any interesting or unusual algorithm or technique.'
+(731-732, 2018-01-03 10:00:18)
+
+'draft. It produces the desired output, but does it do so' (820-820,
+2018-01-03 10:03:05)
+
+'writing API docs is an editing opportunity.' (824-824, 2018-01-03
+10:03:29)
+
+'The code you write will be read (by humans), so make it easy for the
+maintainer to understand it quickly and let the minifier (the machine)
+take care of reducing the file sizes.' (866-867, 2018-01-03 10:06:51)
+
+'why the literal is the preferred pattern for object creation'
+(946-946, 2018-01-05 22:59:35)
+
+'The immediate function pattern is widely used. It helps you wrap an
+amount of work you want to do without leaving any global variables
+behind.' (1613-1614, 2018-01-07 16:56:42)
+
+'Caching the results of a function is also known as memoization.'
+(1703-1704, 2018-01-10 15:11:59)
+
+'Passing a large number of parameters is not convenient. A better
+approach is to substitute all the parameters with only one and make it
+an object;' (1741-1742, 2018-01-10 15:16:12)
+
+'what we think of calling a function is not much more than syntactic
+sugar, equivalent to a function application' (1776-1777, 2018-01-10
+15:19:44)
+
+'The process of making a function understand and handle partial
+application is called currying.' (1806-1807, 2018-01-10 15:22:24)
+
+'Currying has nothing to do with the spicy Indian dish; it comes from
+the name of the mathematician Haskell Curry. (The Haskell programming
+language is also named after him.) Currying is a transformation
+process — we transform a function. An alternative name for currying
+could be schönfinkelisation, after the name of another mathematician,
+Moses Schönfinkel, the original inventor of this transformation.'
+(1809-1812, 2018-01-10 15:22:48)
+
+'Here is the general-purpose currying function: function
+schonfinkelize(fn) {     var slice = Array.prototype.slice,
+stored_args = slice.call(arguments, 1);     return function () {
+var new_args = slice.call(arguments),             args =
+stored_args.concat(new_args);         return fn.apply(null, args);
+}; }' (1838-1843, 2018-01-10 15:24:44)
+
+'When schonfinkelize() is called the first time, it stores a private
+reference to the slice() method (called slice) and also stores the
+arguments it was called with (into stored_args), only stripping the
+first, because the first argument is the function being curried.'
+(1846-1848, 2018-01-10 15:25:48)
+
+'When you find yourself calling the same function and passing mostly
+the same parameters, then the function is probably a good candidate
+for currying.' (1863-1864, 2018-01-10 15:30:11)
+
+'Self-defining functions Overwrite themselves with new bodies to do
+less work from the second invocation and after' (1892-1893, 2018-01-10
+15:31:35)
+
+----------------------------------
+  John Adams (McCullough, David)
+----------------------------------
+
+'Chapter 6, a paragraph headed “The Encouragement of Literature,
+Etc.,” which was like no other declaration to be found in any
+constitution ever written until then, or since. It was entirely
+Adams"s creation, his original contribution to the constitution of
+Massachusetts, and he rightly took great pride in it. Wisdom and
+knowledge, as well as virtue,' (3464-3467, 2017-06-09 01:13:23)
+
+'more heavy, or giddy . . . the pulse quicker. . . .' (4162-4163,
+2017-06-12 23:41:38)
+
+'with it, besides praying for it, depends on the future suffrage'
+(6229-6230, 2017-06-18 21:59:12)
+
+'Rush, “and they were mediating to place the President [pro tempore]'
+(9037-9037, 2017-06-26 16:30:50)
+
+'are the halcyon calms succeeding the storm which our' (10401-10401,
+2017-06-28 01:53:51)
+
+-------------------------------
+  Little, Big (Crowley, John)
+-------------------------------
+
+'imagine.” He smiled what he instantly realized to be a horridly
+ingratiating' (762-763, 2017-10-10 19:07:52)
+
+'musclebound in a not quite human way and striking an absurd,
+orgulous' (2257-2258, 2017-10-15 10:26:31)
+
+'squirrels. She"d had to learn, in order to do the Brobignagian'
+(4617-4618, 2017-10-30 24:10:27)
+
+'had nothing like the strength, he would Somehow have to inveigle'
+(8570-8571, 2017-11-06 22:55:01)
+
+---------------------------------------------------------------------
+  Sea of Poppies: A Novel (The Ibis Trilogy Book 1) (Ghosh, Amitav)
+---------------------------------------------------------------------
+
+'she was relieved to find inside several lumps of hard akbari'
+(447-447, 2017-08-12 09:57:19)
+
+'groom and his immediate family seemed pleasingly diffident' (505-506,
+2017-08-12 10:03:11)
+
+'astonishing, for example, to discover that in making mango-achar,'
+(3712-3713, 2017-08-19 15:22:07)
+
+'above. A stream of water came sluicing back, along the bowsprit,'
+(6563-6564, 2017-08-27 14:30:56)
+
+------------------------------------------------------------------
+  Seizing the Enigma: The Race to Break the German U-Boat Codes,
+  1933-1945 (Kahn, David)
+------------------------------------------------------------------
+
+'three-year-old Type VIIA submarine because he knew her skipper,'
+(1955-1956, 2017-08-03 14:29:54)
+
+'Enigma messages. It worked the two ciphers like a crossruff'
+(3459-3460, 2017-08-04 19:53:03)
+
+'of the sub-infested area, it raised its speed to 10 knots.'
+(3528-3528, 2017-08-04 23:34:27)
+
+------------------------------------------------------------------
+  The Brontës: Wild Genius on the Moors: The Story of a Literary
+  Family (Barker, Juliet)
+------------------------------------------------------------------
+
+'dry (into "snowballs") and then anointed with a thin unguent'
+(3298-3299, 2017-09-05 22:05:22)
+
+'forming their own distinct and separate country. The sardonic'
+(4189-4189, 2017-09-06 19:09:01)
+
+'losing his curate and rallied to his defence, drawing up a
+requisition' (6751-6752, 2017-09-10 21:51:45)
+
+'of the Associations called up at sight of those <Hill> linnet'
+(6874-6875, 2017-09-10 22:02:15)
+
+'Keighley and Haworth, and produce the result of our lucubrations.'
+(10070-10071, 2017-09-17 15:14:53)
+
+'school &c. is as good as I can write; it contains more pith,'
+(13873-13873, 2017-09-20 23:05:02)
+
+'Nicholls, she asked Ellen, and would it be better to let them know'
+(19901-19901, 2017-09-25 22:15:33)
+
+-----------------------------------------
+  The City & The City (Miéville, China)
+-----------------------------------------
+
+'other passengers. I wondered where Breach was. Our remit' (1614-1615,
+2017-09-02 18:48:02)
+
+'tale with spells that tainted their discards, who used astrolabes'
+(2444-2444, 2017-09-02 22:30:52)
+
+'once "How d"you know Orciny"s on our side?" she just laughed and said
+"I don"t, they"re not." She wouldn"t tell me a lot. I didn"t want to
+know. She didn"t talk about it much at all. I thought she might be
+crossing, through some of these places, but…” “When did you last see
+her?” “I don"t know. A few days before' (2883-2887, 2017-09-03
+09:14:02)
+
+'more references to other writers and to her own essays. Her idiolect'
+(4169-4170, 2017-09-03 21:22:26)
+
+-------------------------------------------------------------------
+  The Devotion of Suspect X: A Detective Galileo Novel (Detective
+  Galileo Series Book 1) (Higashino, Keigo)
+-------------------------------------------------------------------
+
+'Light spilled from the apartment window, and Kusanagi' (763-763,
+2017-08-27 23:58:30)
+
+------------------------------------
+  The Last Samurai (DeWitt, Helen)
+------------------------------------
+
+'lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what"s'
+(1217-1218, 2017-07-05 02:07:37)
+
+'least. I freely admit that I have none of the uxorious' (6612-6612,
+2017-07-18 02:13:03)
+
+------------------------------
+  The Occult (Wilson, Colin)
+------------------------------
+
+'man is more deeply moved by meaning than by accident.' (315-315,
+2018-01-08 01:06:10)
+
+'He must turn increasingly inward. That is, he must turn to the hidden
+levels of his being,' (359-359, 2018-01-08 01:11:50)
+
+'The power to be derived from this "fearful passionless force" is only
+incidentally a power over things and people. It is basically power
+over oneself, contact with some "source of power, meaning and purpose"
+in the subconscious mind.' (465-467, 2018-01-08 11:13:13)
+
+'we are dealing with a faculty that may be called a sixth sense, a
+subconscious faculty by comparison with which our powers of conscious
+observation are clumsy and inaccurate.' (514-515, 2018-01-08 11:17:34)
+
+'A poet is simply a man in whom the links with our animal past are
+still strong.' (570-571, 2018-01-08 11:23:11)
+
+'This sense of "meanings" that are not apparent to ordinary
+consciousness is experienced by everyone at some time or another.'
+(602-603, 2018-01-08 11:34:51)
+
+'there is a kind of "psychic ether" that carries mental vibrations as
+the "luminiferous ether" is supposed to carry light. This I would
+define as the fundamental proposition of magic or occultism, and
+perhaps the only essential one. It will be taken for granted
+throughout this book.' (705-708, 2018-01-09 09:14:13)
+
+'"Objectivity" causes power to flow into the soul, a surge of
+strength, and contact with the vast, strange forces that surround us.'
+(712-713, 2018-01-09 09:15:39)
+
+-----------------------------------------------------
+  The Stone Sky (The Broken Earth) (Jemisin, N. K.)
+-----------------------------------------------------
+
+'from his canteen. When he lowers it, he looks bemused.' (2219-2219,
+2017-12-27 16:20:40)

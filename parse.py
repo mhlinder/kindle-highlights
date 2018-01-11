@@ -1,6 +1,8 @@
 
 import argparse
+import codecs
 import collections
+import json
 import re
 import textwrap
 
@@ -8,16 +10,29 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-w', '--write-file',
                     help = 'Write to a file',
                     action = 'store_true')
+parser.add_argument('-j', '--json',
+                    help = 'Generate JSON',
+                    action = 'store_true')
                     
 args = parser.parse_args()
 
-def main(outfile = 'tmp.txt'):
+def main(outbase = 'bib', json = False):
     bib = init_sources()
-    if outfile is None:
-        bib.print()
+    if json:
+        if outbase is None:
+            print(bib.get_json())
+        else:
+            outfile = '{}.json'.format(outbase)
+            print("Saving to file '{}'".format(outfile))
+            with codecs.open(outfile, 'w', encoding = 'utf-8') as f:
+                bib.get_json(f)
     else:
-        print("Saving to file '{}'".format(outfile))
-        bib.print(outfile)
+        if outbase is None:
+            bib.print()
+        else:
+            outfile = '{}.txt'.format(outbase)
+            print("Saving to file '{}'".format(outfile))
+            bib.print(outfile)
 
 def fill(s, width = 70, break_long_words = False, indent = 0):
     return textwrap.fill(s, width = width - indent,
@@ -71,6 +86,22 @@ class Bibliography:
     def get_citations(self):
         return sorted(self.citations)
 
+    def get_json(self, f = None):
+        bib = {}
+        for citation in self.citations:
+            source = self.sources[citation]
+            s = []
+            for segment in source.segments:
+                seg = {'Start' : segment.start,
+                       'End'   : segment.end,
+                       'Text'  : segment.text}
+                s.append(seg)
+            bib[citation] = s
+        if f is None:
+            return json.dumps(bib, sort_keys = True, indent = 4, ensure_ascii = False)
+        else:
+            json.dump(bib, f, sort_keys = True, indent = 4, ensure_ascii = False)
+            
     def get_source(self, citation):
         return self.sources[citation]
 
@@ -82,7 +113,7 @@ class Bibliography:
         if outfile is None:
             fpointer = None
         else:
-            fpointer = open(outfile, 'w')
+            fpointer = codecs.open(outfile, 'w', encoding = 'utf-8')
 
         citations = self.get_citations()
         for citation in citations:
@@ -146,8 +177,7 @@ class Highlight:
                                    '{0:02d}:{1:02d}:{2:02d}'.format(time['Hour'],
                                                                     time['Minute'],
                                                                     time['Second'])])
-
-        self.text  = text
+        self.text = text.replace(u'\u2018', '"').replace(u'\u2019', '"')
         
 class Source:
     def __init__(self, citation):
@@ -233,7 +263,14 @@ class Segment:
             fpointer.write(newline(text, l = 1, r = 1))
 
 if __name__ == '__main__':
-    if args.write_file:
-        main()
+    if args.json:
+        if args.write_file:
+            main(json = True)
+        else:
+            main(outbase = None, json = True)
+        pass
     else:
-        main(None)
+        if args.write_file:
+            main()
+        else:
+            main(outbase = None)
