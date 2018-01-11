@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Kindle Clippings</title>
+
+        <script src="d3.v4.min.js" charset="utf-8"></script>
+
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="skeleton.css" />
+        <link rel="stylesheet" href="custom.css" />
+        
+    </head>
+
+    <body>
+        
+        <div class="container" id="main">
+            <div class="row title">
+                <h1>Kindle Clippings</h1>
+            </div>
+        </div>
+        
+        <script>
+         var container = d3.select('#main'),
+             nav = container.append('div')
+                            .attr('class', 'row')
+                            .append('ul');
+
+         d3.json('bib.json', function(bib) {
+             var citations = Object.keys(bib),
+                 count = 0,
+                 k = 3, // Number of columns
+                 i = 0, // Column counter
+                 citation, citation0,
+                 title, author,
+                 row, columns, column,hl, all_hl,
+                 ul;
+
+             while (citations.length) {
+                 count += 1;
+                 i += 1;
+                 if (i == 1) {
+                     row = container.append('div').attr('class', 'row clip');
+                     columns = [];
+                     for (var j = 0; j < k; j += 1) {
+                         columns.push(row.append('div')
+                                         .attr('class', 'four columns'));
+                     }
+                 }
+                 
+                 citation = citations.shift();
+                 // The regex matches strings of the form
+                 //   .*(Last, First)$
+                 // and reorders the names.
+                 citation0 = citation.replace(/\(([\w.]+), ([\w. ]+)\)$/, '($2 $1)')
+                 // Remove everything after the final '('
+                 title = citation0.replace(/ \([\w. ]*\)$/, '');
+                 // Remove everything before the final '('
+                 author = citation0.replace(/.*\(([\w. ]+)\)$/, '$1');
+
+                 column = columns[i-1];
+                 column.attr('id', 'citation-' + count);
+                 
+                 nav.append('li')
+                    .attr('id', 'nav-' + count);
+                 
+                 d3.select('#nav-' + count)
+                   .append('span')
+                   .html('<a href="#citation-' + count + '">'
+                       + title + '</a> (' + author + ')');
+                 
+                 column.append('h2').text(title);
+                 column.append('h3').text(author);
+
+                 ul = column.append('ul');
+                 
+                 all_hl   = bib[citation];
+
+                 while (all_hl.length) {
+                     hl = all_hl.shift();
+
+                     ul.append('li')
+                       .text(hl.Text + ' (' + hl.Start + '-' + hl.End + ')');
+                 }
+                 column.append('a').text('Top').attr('href', '#main');
+
+                 if (i == 3) {
+                     i = 0;
+                 }
+             }
+         });
+        </script>
+        
+    </body>
+</html>
+        
