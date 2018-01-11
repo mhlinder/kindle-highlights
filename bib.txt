@@ -56,13 +56,13 @@ programs simpler and less error-prone.' (201-203, 2018-01-03 08:36:23)
 forced, to write code that works in strict mode.' (212-213, 2018-01-03
 08:36:47)
 
-'To avoid clutter, some code snippets skip it, too, and assume you"re
+'To avoid clutter, some code snippets skip it, too, and assume you’re
 testing the code in the console: window.name === window['name']; //
 true This is as if we used the following: console.log(window.name ===
 window['name']); and it printed true in the console.' (243-247,
 2018-01-03 08:39:20)
 
-'It"s therefore critical to reduce the time it takes to understand
+'It’s therefore critical to reduce the time it takes to understand
 code, either written by yourself some time ago or written by another
 developer in the team.' (261-262, 2018-01-03 09:21:52)
 
@@ -71,7 +71,7 @@ predictable Looks as if it was written by the same person Is
 documented' (273-275, 2018-01-03 09:22:34)
 
 'JavaScript has the notion of implied globals, meaning that any
-variable you don"t declare becomes a property of the global object'
+variable you don’t declare becomes a property of the global object'
 (302-303, 2018-01-03 09:24:33)
 
 'after calling the function you end up with one more variable result
@@ -82,8 +82,8 @@ in the global namespace that can be a source of problems.' (306-308,
 assignments as part of a var declaration.' (311-312, 2018-01-03
 09:26:29)
 
-'If you"ve already declared the variables, chaining assignments is
-fine and doesn"t create unexpected globals' (320-320, 2018-01-03
+'If you’ve already declared the variables, chaining assignments is
+fine and doesn’t create unexpected globals' (320-320, 2018-01-03
 09:26:42)
 
 'implied globals are technically not real variables, but they are
@@ -104,19 +104,19 @@ mode.' (348-349, 2018-01-03 09:29:16)
 'Using a single var statement at the top of your functions is a useful
 pattern to adopt.' (352-353, 2018-01-03 09:29:37)
 
-'and declare multiple variables delimited by commas. It"s a good
+'and declare multiple variables delimited by commas. It’s a good
 practice to also initialize the variable with an initial value at the
 time you declare it.' (362-363, 2018-01-03 09:30:04)
 
 'For JavaScript, as long as a variable is in the same scope (same
-function), it"s considered declared, even when it"s used before the
+function), it’s considered declared, even when it’s used before the
 var declaration' (375-376, 2018-01-03 09:31:26)
 
 'A problem with this pattern is that the length of the array is
 accessed on every loop iteration.' (400-401, 2018-01-03 09:32:53)
 
-'That"s why a better pattern for for loops is to cache the length of
-the array (or collection) you"re iterating over, as shown in the
+'That’s why a better pattern for for loops is to cache the length of
+the array (or collection) you’re iterating over, as shown in the
 following example: for (var i = 0, max = myarray.length; i < max; i++)
 {     // do something with myarray[i] }' (414-417, 2018-01-03
 09:34:43)
@@ -127,10 +127,10 @@ of these expressions: i = i + 1 i += 1' (432-434, 2018-01-03 09:36:31)
 'for-in loops should be used to iterate over nonarray objects. Looping
 with for-in is also called enumeration' (448-450, 2018-01-03 09:38:00)
 
-'it"s best if you don"t augment built-in prototypes' (497-498,
+'it’s best if you don’t augment built-in prototypes' (497-498,
 2018-01-03 09:41:18)
 
-'Ending the switch with a default: to make sure there"s always a sane
+'Ending the switch with a default: to make sure there’s always a sane
 result even if none of the cases matched.' (518-519, 2018-01-03
 09:42:40)
 
@@ -216,7 +216,7 @@ less work from the second invocation and after' (1892-1893, 2018-01-10
 'Chapter 6, a paragraph headed “The Encouragement of Literature,
 Etc.,” which was like no other declaration to be found in any
 constitution ever written until then, or since. It was entirely
-Adams"s creation, his original contribution to the constitution of
+Adams’s creation, his original contribution to the constitution of
 Massachusetts, and he rightly took great pride in it. Wisdom and
 knowledge, as well as virtue,' (3464-3467, 2017-06-09 01:13:23)
 
@@ -242,7 +242,7 @@ ingratiating' (762-763, 2017-10-10 19:07:52)
 'musclebound in a not quite human way and striking an absurd,
 orgulous' (2257-2258, 2017-10-15 10:26:31)
 
-'squirrels. She"d had to learn, in order to do the Brobignagian'
+'squirrels. She’d had to learn, in order to do the Brobignagian'
 (4617-4618, 2017-10-30 24:10:27)
 
 'had nothing like the strength, he would Somehow have to inveigle'
@@ -283,7 +283,7 @@ orgulous' (2257-2258, 2017-10-15 10:26:31)
   Family (Barker, Juliet)
 ------------------------------------------------------------------
 
-'dry (into "snowballs") and then anointed with a thin unguent'
+'dry (into ‘snowballs’) and then anointed with a thin unguent'
 (3298-3299, 2017-09-05 22:05:22)
 
 'forming their own distinct and separate country. The sardonic'
@@ -314,11 +314,11 @@ requisition' (6751-6752, 2017-09-10 21:51:45)
 'tale with spells that tainted their discards, who used astrolabes'
 (2444-2444, 2017-09-02 22:30:52)
 
-'once "How d"you know Orciny"s on our side?" she just laughed and said
-"I don"t, they"re not." She wouldn"t tell me a lot. I didn"t want to
-know. She didn"t talk about it much at all. I thought she might be
+'once ‘How d’you know Orciny’s on our side?’ she just laughed and said
+‘I don’t, they’re not.’ She wouldn’t tell me a lot. I didn’t want to
+know. She didn’t talk about it much at all. I thought she might be
 crossing, through some of these places, but…” “When did you last see
-her?” “I don"t know. A few days before' (2883-2887, 2017-09-03
+her?” “I don’t know. A few days before' (2883-2887, 2017-09-03
 09:14:02)
 
 'more references to other writers and to her own essays. Her idiolect'
@@ -336,7 +336,7 @@ her?” “I don"t know. A few days before' (2883-2887, 2017-09-03
   The Last Samurai (DeWitt, Helen)
 ------------------------------------
 
-'lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what"s'
+'lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what’s'
 (1217-1218, 2017-07-05 02:07:37)
 
 'least. I freely admit that I have none of the uxorious' (6612-6612,
@@ -352,9 +352,9 @@ her?” “I don"t know. A few days before' (2883-2887, 2017-09-03
 'He must turn increasingly inward. That is, he must turn to the hidden
 levels of his being,' (359-359, 2018-01-08 01:11:50)
 
-'The power to be derived from this "fearful passionless force" is only
+'The power to be derived from this ‘fearful passionless force’ is only
 incidentally a power over things and people. It is basically power
-over oneself, contact with some "source of power, meaning and purpose"
+over oneself, contact with some ‘source of power, meaning and purpose’
 in the subconscious mind.' (465-467, 2018-01-08 11:13:13)
 
 'we are dealing with a faculty that may be called a sixth sense, a
@@ -364,17 +364,17 @@ observation are clumsy and inaccurate.' (514-515, 2018-01-08 11:17:34)
 'A poet is simply a man in whom the links with our animal past are
 still strong.' (570-571, 2018-01-08 11:23:11)
 
-'This sense of "meanings" that are not apparent to ordinary
+'This sense of ‘meanings’ that are not apparent to ordinary
 consciousness is experienced by everyone at some time or another.'
 (602-603, 2018-01-08 11:34:51)
 
-'there is a kind of "psychic ether" that carries mental vibrations as
-the "luminiferous ether" is supposed to carry light. This I would
+'there is a kind of ‘psychic ether’ that carries mental vibrations as
+the ‘luminiferous ether’ is supposed to carry light. This I would
 define as the fundamental proposition of magic or occultism, and
 perhaps the only essential one. It will be taken for granted
 throughout this book.' (705-708, 2018-01-09 09:14:13)
 
-'"Objectivity" causes power to flow into the soul, a surge of
+'‘Objectivity’ causes power to flow into the soul, a surge of
 strength, and contact with the vast, strange forces that surround us.'
 (712-713, 2018-01-09 09:15:39)
 

@@ -53,7 +53,15 @@ def init_sources(infile = 'My Clippings.txt'):
     for hl in all_hl:
         citation = hl[0]
         location = hl[1]
-        text = '\n'.join(hl[2:])
+        lines = hl[2:]
+        # # Lines of code are, obviously, improperly formatted; but
+        # # short of introducing a hard break via <br />, there doesn't
+        # # seem to be a good way to force proper formatting, and that
+        # # doesn't catch all edge cases.
+        # for i in range(1, len(lines)):
+        #     if re.search('^  ', lines[i]):
+        #         lines[i-1] = '{}<br />'.format(lines[i-1])
+        text = '\n'.join(lines)
         if re.search('Highlight', location):
             bibliography.add_hl(citation, location, text)
     bibliography.parse_segments()
@@ -177,7 +185,9 @@ class Highlight:
                                    '{0:02d}:{1:02d}:{2:02d}'.format(time['Hour'],
                                                                     time['Minute'],
                                                                     time['Second'])])
-        self.text = text.replace(u'\u2018', '"').replace(u'\u2019', '"')
+        ## Remove unicode characters
+        # self.text = text.replace(u'\u2018', '"').replace(u'\u2019', '"')
+        self.text = text
         
 class Source:
     def __init__(self, citation):

@@ -72,12 +72,12 @@
         {
             "End": 247,
             "Start": 243,
-            "Text": "To avoid clutter, some code snippets skip it, too, and assume you\"re testing the code in the console: window.name === window['name']; // true This is as if we used the following: console.log(window.name === window['name']); and it printed true in the console."
+            "Text": "To avoid clutter, some code snippets skip it, too, and assume you’re testing the code in the console: window.name === window['name']; // true This is as if we used the following: console.log(window.name === window['name']); and it printed true in the console."
         },
         {
             "End": 262,
             "Start": 261,
-            "Text": "It\"s therefore critical to reduce the time it takes to understand code, either written by yourself some time ago or written by another developer in the team."
+            "Text": "It’s therefore critical to reduce the time it takes to understand code, either written by yourself some time ago or written by another developer in the team."
         },
         {
             "End": 275,
@@ -87,7 +87,7 @@
         {
             "End": 303,
             "Start": 302,
-            "Text": "JavaScript has the notion of implied globals, meaning that any variable you don\"t declare becomes a property of the global object"
+            "Text": "JavaScript has the notion of implied globals, meaning that any variable you don’t declare becomes a property of the global object"
         },
         {
             "End": 308,
@@ -102,7 +102,7 @@
         {
             "End": 320,
             "Start": 320,
-            "Text": "If you\"ve already declared the variables, chaining assignments is fine and doesn\"t create unexpected globals"
+            "Text": "If you’ve already declared the variables, chaining assignments is fine and doesn’t create unexpected globals"
         },
         {
             "End": 333,
@@ -132,12 +132,12 @@
         {
             "End": 363,
             "Start": 362,
-            "Text": "and declare multiple variables delimited by commas. It\"s a good practice to also initialize the variable with an initial value at the time you declare it."
+            "Text": "and declare multiple variables delimited by commas. It’s a good practice to also initialize the variable with an initial value at the time you declare it."
         },
         {
             "End": 376,
             "Start": 375,
-            "Text": "For JavaScript, as long as a variable is in the same scope (same function), it\"s considered declared, even when it\"s used before the var declaration"
+            "Text": "For JavaScript, as long as a variable is in the same scope (same function), it’s considered declared, even when it’s used before the var declaration"
         },
         {
             "End": 401,
@@ -147,7 +147,7 @@
         {
             "End": 417,
             "Start": 414,
-            "Text": "That\"s why a better pattern for for loops is to cache the length of the array (or collection) you\"re iterating over, as shown in the following example: for (var i = 0, max = myarray.length; i < max; i++) {\n    // do something with myarray[i]\n}"
+            "Text": "That’s why a better pattern for for loops is to cache the length of the array (or collection) you’re iterating over, as shown in the following example: for (var i = 0, max = myarray.length; i < max; i++) {\n    // do something with myarray[i]\n}"
         },
         {
             "End": 434,
@@ -162,12 +162,12 @@
         {
             "End": 498,
             "Start": 497,
-            "Text": "it\"s best if you don\"t augment built-in prototypes"
+            "Text": "it’s best if you don’t augment built-in prototypes"
         },
         {
             "End": 519,
             "Start": 518,
-            "Text": "Ending the switch with a default: to make sure there\"s always a sane result even if none of the cases matched."
+            "Text": "Ending the switch with a default: to make sure there’s always a sane result even if none of the cases matched."
         },
         {
             "End": 700,
@@ -259,7 +259,7 @@
         {
             "End": 3467,
             "Start": 3464,
-            "Text": "Chapter 6, a paragraph headed “The Encouragement of Literature, Etc.,” which was like no other declaration to be found in any constitution ever written until then, or since. It was entirely Adams\"s creation, his original contribution to the constitution of Massachusetts, and he rightly took great pride in it. Wisdom and knowledge, as well as virtue,"
+            "Text": "Chapter 6, a paragraph headed “The Encouragement of Literature, Etc.,” which was like no other declaration to be found in any constitution ever written until then, or since. It was entirely Adams’s creation, his original contribution to the constitution of Massachusetts, and he rightly took great pride in it. Wisdom and knowledge, as well as virtue,"
         },
         {
             "End": 4163,
@@ -296,7 +296,7 @@
         {
             "End": 4618,
             "Start": 4617,
-            "Text": "squirrels. She\"d had to learn, in order to do the Brobignagian"
+            "Text": "squirrels. She’d had to learn, in order to do the Brobignagian"
         },
         {
             "End": 8571,
@@ -347,7 +347,7 @@
         {
             "End": 3299,
             "Start": 3298,
-            "Text": "dry (into \"snowballs\") and then anointed with a thin unguent"
+            "Text": "dry (into ‘snowballs’) and then anointed with a thin unguent"
         },
         {
             "End": 4189,
@@ -394,7 +394,7 @@
         {
             "End": 2887,
             "Start": 2883,
-            "Text": "once \"How d\"you know Orciny\"s on our side?\" she just laughed and said \"I don\"t, they\"re not.\" She wouldn\"t tell me a lot. I didn\"t want to know. She didn\"t talk about it much at all. I thought she might be crossing, through some of these places, but…” “When did you last see her?” “I don\"t know. A few days before"
+            "Text": "once ‘How d’you know Orciny’s on our side?’ she just laughed and said ‘I don’t, they’re not.’ She wouldn’t tell me a lot. I didn’t want to know. She didn’t talk about it much at all. I thought she might be crossing, through some of these places, but…” “When did you last see her?” “I don’t know. A few days before"
         },
         {
             "End": 4170,
@@ -413,7 +413,7 @@
         {
             "End": 1218,
             "Start": 1217,
-            "Text": "lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what\"s"
+            "Text": "lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what’s"
         },
         {
             "End": 6612,
@@ -435,7 +435,7 @@
         {
             "End": 467,
             "Start": 465,
-            "Text": "The power to be derived from this \"fearful passionless force\" is only incidentally a power over things and people. It is basically power over oneself, contact with some \"source of power, meaning and purpose\" in the subconscious mind."
+            "Text": "The power to be derived from this ‘fearful passionless force’ is only incidentally a power over things and people. It is basically power over oneself, contact with some ‘source of power, meaning and purpose’ in the subconscious mind."
         },
         {
             "End": 515,
@@ -450,17 +450,17 @@
         {
             "End": 603,
             "Start": 602,
-            "Text": "This sense of \"meanings\" that are not apparent to ordinary consciousness is experienced by everyone at some time or another."
+            "Text": "This sense of ‘meanings’ that are not apparent to ordinary consciousness is experienced by everyone at some time or another."
         },
         {
             "End": 708,
             "Start": 705,
-            "Text": "there is a kind of \"psychic ether\" that carries mental vibrations as the \"luminiferous ether\" is supposed to carry light. This I would define as the fundamental proposition of magic or occultism, and perhaps the only essential one. It will be taken for granted throughout this book."
+            "Text": "there is a kind of ‘psychic ether’ that carries mental vibrations as the ‘luminiferous ether’ is supposed to carry light. This I would define as the fundamental proposition of magic or occultism, and perhaps the only essential one. It will be taken for granted throughout this book."
         },
         {
             "End": 713,
             "Start": 712,
-            "Text": "\"Objectivity\" causes power to flow into the soul, a surge of strength, and contact with the vast, strange forces that surround us."
+            "Text": "‘Objectivity’ causes power to flow into the soul, a surge of strength, and contact with the vast, strange forces that surround us."
         }
     ],
     "The Stone Sky (The Broken Earth) (Jemisin, N. K.)": [
