@@ -25,6 +25,10 @@ h3 {
     padding-bottom: 1em;
 }
 
+.title {
+    text-align: center;
+}
+
 /* http://stackoverflow.com/questions/10428720/how-to-keep-indent-for-second-line-in-ordered-lists-via-css */
 ul {
     counter-reset: foo;
