@@ -3,471 +3,560 @@
         {
             "End": 1752,
             "Start": 1752,
-            "Text": "gables and stone mullioned windows, built by wealthy yeomen"
+            "Text": "gables and stone mullioned windows, built by wealthy yeomen",
+            "Timestamp": "2017-09-04 22:16:09"
         }
     ],
     "H Is for Hawk (Macdonald, Helen)": [
         {
             "End": 484,
             "Start": 484,
-            "Text": "in a riot of saffron and bronze. Her talons gripped"
+            "Text": "in a riot of saffron and bronze. Her talons gripped",
+            "Timestamp": "2017-11-19 20:01:39"
         },
         {
             "End": 1456,
             "Start": 1456,
-            "Text": "has forgotten, then bounces back onto the perch with brio,"
+            "Text": "has forgotten, then bounces back onto the perch with brio,",
+            "Timestamp": "2017-12-10 17:42:23"
         },
         {
             "End": 1510,
             "Start": 1509,
-            "Text": "photographs of White much later in his life: a corpulent,"
+            "Text": "photographs of White much later in his life: a corpulent,",
+            "Timestamp": "2017-12-10 17:46:54"
         }
     ],
     "JavaScript Patterns: Build Better Applications with Coding and Design Patterns (Stefanov, Stoyan)": [
         {
             "End": 18,
             "Start": 17,
-            "Text": "patterns are templates for solving categories of problems."
+            "Text": "patterns are templates for solving categories of problems.",
+            "Timestamp": "2018-01-03 08:24:27"
         },
         {
             "End": 21,
             "Start": 20,
-            "Text": "Patterns also help us communicate better by simply providing a common vocabulary."
+            "Text": "Patterns also help us communicate better by simply providing a common vocabulary.",
+            "Timestamp": "2018-01-03 08:24:46"
         },
         {
             "End": 116,
             "Start": 116,
-            "Text": "a template for solving categories of problems."
+            "Text": "a template for solving categories of problems.",
+            "Timestamp": "2018-01-03 08:28:15"
         },
         {
             "End": 161,
             "Start": 158,
-            "Text": "And one last thing to keep in mind is that there are two main types of objects: Native Described in the ECMAScript standard Host Defined by the host environment (for example, the browser environment)"
+            "Text": "And one last thing to keep in mind is that there are two main types of objects: Native Described in the ECMAScript standard Host Defined by the host environment (for example, the browser environment)",
+            "Timestamp": "2018-01-03 08:32:26"
         },
         {
             "End": 169,
             "Start": 168,
-            "Text": "There are no classes in JavaScript."
+            "Text": "There are no classes in JavaScript.",
+            "Timestamp": "2018-01-03 08:32:45"
         },
         {
             "End": 179,
             "Start": 178,
-            "Text": "create objects out of available pieces you have lying around,"
+            "Text": "create objects out of available pieces you have lying around,",
+            "Timestamp": "2018-01-03 08:33:53"
         },
         {
             "End": 190,
             "Start": 189,
-            "Text": "the prototype is an object (not a class or anything special) and every function has a prototype property."
+            "Text": "the prototype is an object (not a class or anything special) and every function has a prototype property.",
+            "Timestamp": "2018-01-03 08:34:36"
         },
         {
             "End": 203,
             "Start": 201,
-            "Text": "Version 5 adds some new built-in objects, methods, and properties to the language, but its most important addition is the so-called strict mode, which actually removes features from the language, making the programs simpler and less error-prone."
+            "Text": "Version 5 adds some new built-in objects, methods, and properties to the language, but its most important addition is the so-called strict mode, which actually removes features from the language, making the programs simpler and less error-prone.",
+            "Timestamp": "2018-01-03 08:36:23"
         },
         {
             "End": 213,
             "Start": 212,
-            "Text": "ES5 is a transitional version — developers are encouraged, but not forced, to write code that works in strict mode."
+            "Text": "ES5 is a transitional version — developers are encouraged, but not forced, to write code that works in strict mode.",
+            "Timestamp": "2018-01-03 08:36:47"
         },
         {
             "End": 247,
             "Start": 243,
-            "Text": "To avoid clutter, some code snippets skip it, too, and assume you’re testing the code in the console: window.name === window['name']; // true This is as if we used the following: console.log(window.name === window['name']); and it printed true in the console."
+            "Text": "To avoid clutter, some code snippets skip it, too, and assume you’re testing the code in the console: window.name === window['name']; // true This is as if we used the following: console.log(window.name === window['name']); and it printed true in the console.",
+            "Timestamp": "2018-01-03 08:39:20"
         },
         {
             "End": 262,
             "Start": 261,
-            "Text": "It’s therefore critical to reduce the time it takes to understand code, either written by yourself some time ago or written by another developer in the team."
+            "Text": "It’s therefore critical to reduce the time it takes to understand code, either written by yourself some time ago or written by another developer in the team.",
+            "Timestamp": "2018-01-03 09:21:52"
         },
         {
             "End": 275,
             "Start": 273,
-            "Text": "Maintainable code means code that: Is readable Is consistent Is predictable Looks as if it was written by the same person Is documented"
+            "Text": "Maintainable code means code that: Is readable Is consistent Is predictable Looks as if it was written by the same person Is documented",
+            "Timestamp": "2018-01-03 09:22:34"
         },
         {
             "End": 303,
             "Start": 302,
-            "Text": "JavaScript has the notion of implied globals, meaning that any variable you don’t declare becomes a property of the global object"
+            "Text": "JavaScript has the notion of implied globals, meaning that any variable you don’t declare becomes a property of the global object",
+            "Timestamp": "2018-01-03 09:24:33"
         },
         {
             "End": 308,
             "Start": 306,
-            "Text": "after calling the function you end up with one more variable result in the global namespace that can be a source of problems."
+            "Text": "after calling the function you end up with one more variable result in the global namespace that can be a source of problems.",
+            "Timestamp": "2018-01-03 09:25:02"
         },
         {
             "End": 312,
             "Start": 311,
-            "Text": "Another antipattern that creates implied globals is to chain assignments as part of a var declaration."
+            "Text": "Another antipattern that creates implied globals is to chain assignments as part of a var declaration.",
+            "Timestamp": "2018-01-03 09:26:29"
         },
         {
             "End": 320,
             "Start": 320,
-            "Text": "If you’ve already declared the variables, chaining assignments is fine and doesn’t create unexpected globals"
+            "Text": "If you’ve already declared the variables, chaining assignments is fine and doesn’t create unexpected globals",
+            "Timestamp": "2018-01-03 09:26:42"
         },
         {
             "End": 333,
             "Start": 332,
-            "Text": "implied globals are technically not real variables, but they are properties of the global object."
+            "Text": "implied globals are technically not real variables, but they are properties of the global object.",
+            "Timestamp": "2018-01-03 09:27:46"
         },
         {
             "End": 341,
             "Start": 340,
-            "Text": "the global object is accessible from any part of the code via the window property"
+            "Text": "the global object is accessible from any part of the code via the window property",
+            "Timestamp": "2018-01-03 09:28:40"
         },
         {
             "End": 346,
             "Start": 343,
-            "Text": "If you need to access the global object without hard-coding the identifier window, you can do the following from any level of nested function scope: var global = (function () {\n    return this;\n}());"
+            "Text": "If you need to access the global object without hard-coding the identifier window, you can do the following from any level of nested function scope: var global = (function () {\n    return this;\n}());",
+            "Timestamp": "2018-01-03 09:28:50"
         },
         {
             "End": 349,
             "Start": 348,
-            "Text": "This is actually no longer the case in ECMAScript 5 in strict mode, so you have to adopt a different pattern when your code is in strict mode."
+            "Text": "This is actually no longer the case in ECMAScript 5 in strict mode, so you have to adopt a different pattern when your code is in strict mode.",
+            "Timestamp": "2018-01-03 09:29:16"
         },
         {
             "End": 353,
             "Start": 352,
-            "Text": "Using a single var statement at the top of your functions is a useful pattern to adopt."
+            "Text": "Using a single var statement at the top of your functions is a useful pattern to adopt.",
+            "Timestamp": "2018-01-03 09:29:37"
         },
         {
             "End": 363,
             "Start": 362,
-            "Text": "and declare multiple variables delimited by commas. It’s a good practice to also initialize the variable with an initial value at the time you declare it."
+            "Text": "and declare multiple variables delimited by commas. It’s a good practice to also initialize the variable with an initial value at the time you declare it.",
+            "Timestamp": "2018-01-03 09:30:04"
         },
         {
             "End": 376,
             "Start": 375,
-            "Text": "For JavaScript, as long as a variable is in the same scope (same function), it’s considered declared, even when it’s used before the var declaration"
+            "Text": "For JavaScript, as long as a variable is in the same scope (same function), it’s considered declared, even when it’s used before the var declaration",
+            "Timestamp": "2018-01-03 09:31:26"
         },
         {
             "End": 401,
             "Start": 400,
-            "Text": "A problem with this pattern is that the length of the array is accessed on every loop iteration."
+            "Text": "A problem with this pattern is that the length of the array is accessed on every loop iteration.",
+            "Timestamp": "2018-01-03 09:32:53"
         },
         {
             "End": 417,
             "Start": 414,
-            "Text": "That’s why a better pattern for for loops is to cache the length of the array (or collection) you’re iterating over, as shown in the following example: for (var i = 0, max = myarray.length; i < max; i++) {\n    // do something with myarray[i]\n}"
+            "Text": "That’s why a better pattern for for loops is to cache the length of the array (or collection) you’re iterating over, as shown in the following example: for (var i = 0, max = myarray.length; i < max; i++) {\n    // do something with myarray[i]\n}",
+            "Timestamp": "2018-01-03 09:34:43"
         },
         {
             "End": 434,
             "Start": 432,
-            "Text": "One last tweak to the loop would be to substitute i++ with either one of these expressions: i = i + 1\ni += 1"
+            "Text": "One last tweak to the loop would be to substitute i++ with either one of these expressions: i = i + 1\ni += 1",
+            "Timestamp": "2018-01-03 09:36:31"
         },
         {
             "End": 450,
             "Start": 448,
-            "Text": "for-in loops should be used to iterate over nonarray objects. Looping with for-in is also called enumeration"
+            "Text": "for-in loops should be used to iterate over nonarray objects. Looping with for-in is also called enumeration",
+            "Timestamp": "2018-01-03 09:38:00"
         },
         {
             "End": 498,
             "Start": 497,
-            "Text": "it’s best if you don’t augment built-in prototypes"
+            "Text": "it’s best if you don’t augment built-in prototypes",
+            "Timestamp": "2018-01-03 09:41:18"
         },
         {
             "End": 519,
             "Start": 518,
-            "Text": "Ending the switch with a default: to make sure there’s always a sane result even if none of the cases matched."
+            "Text": "Ending the switch with a default: to make sure there’s always a sane result even if none of the cases matched.",
+            "Timestamp": "2018-01-03 09:42:40"
         },
         {
             "End": 700,
             "Start": 696,
-            "Text": "And what about variables that are not functions? Developers commonly use lower camel case for variable names, but another good idea is to use all lowercase words delimited by an underscore: for example, first_name, favorite_bands, and old_company_name. This notation helps you visually distinguish between functions and all other identifiers — primitives and objects."
+            "Text": "And what about variables that are not functions? Developers commonly use lower camel case for variable names, but another good idea is to use all lowercase words delimited by an underscore: for example, first_name, favorite_bands, and old_company_name. This notation helps you visually distinguish between functions and all other identifiers — primitives and objects.",
+            "Timestamp": "2018-01-03 09:57:44"
         },
         {
             "End": 712,
             "Start": 712,
-            "Text": "use an underscore prefix to denote a private method or property."
+            "Text": "use an underscore prefix to denote a private method or property.",
+            "Timestamp": "2018-01-03 09:59:16"
         },
         {
             "End": 732,
             "Start": 731,
-            "Text": "the obvious: every single variable or every single line. But you usually need to document all functions, their arguments and return values, and also any interesting or unusual algorithm or technique."
+            "Text": "the obvious: every single variable or every single line. But you usually need to document all functions, their arguments and return values, and also any interesting or unusual algorithm or technique.",
+            "Timestamp": "2018-01-03 10:00:18"
         },
         {
             "End": 820,
             "Start": 820,
-            "Text": "draft. It produces the desired output, but does it do so"
+            "Text": "draft. It produces the desired output, but does it do so",
+            "Timestamp": "2018-01-03 10:03:05"
         },
         {
             "End": 824,
             "Start": 824,
-            "Text": "writing API docs is an editing opportunity."
+            "Text": "writing API docs is an editing opportunity.",
+            "Timestamp": "2018-01-03 10:03:29"
         },
         {
             "End": 867,
             "Start": 866,
-            "Text": "The code you write will be read (by humans), so make it easy for the maintainer to understand it quickly and let the minifier (the machine) take care of reducing the file sizes."
+            "Text": "The code you write will be read (by humans), so make it easy for the maintainer to understand it quickly and let the minifier (the machine) take care of reducing the file sizes.",
+            "Timestamp": "2018-01-03 10:06:51"
         },
         {
             "End": 946,
             "Start": 946,
-            "Text": "why the literal is the preferred pattern for object creation"
+            "Text": "why the literal is the preferred pattern for object creation",
+            "Timestamp": "2018-01-05 22:59:35"
         },
         {
             "End": 1614,
             "Start": 1613,
-            "Text": "The immediate function pattern is widely used. It helps you wrap an amount of work you want to do without leaving any global variables behind."
+            "Text": "The immediate function pattern is widely used. It helps you wrap an amount of work you want to do without leaving any global variables behind.",
+            "Timestamp": "2018-01-07 16:56:42"
         },
         {
             "End": 1704,
             "Start": 1703,
-            "Text": "Caching the results of a function is also known as memoization."
+            "Text": "Caching the results of a function is also known as memoization.",
+            "Timestamp": "2018-01-10 15:11:59"
         },
         {
             "End": 1742,
             "Start": 1741,
-            "Text": "Passing a large number of parameters is not convenient. A better approach is to substitute all the parameters with only one and make it an object;"
+            "Text": "Passing a large number of parameters is not convenient. A better approach is to substitute all the parameters with only one and make it an object;",
+            "Timestamp": "2018-01-10 15:16:12"
         },
         {
             "End": 1777,
             "Start": 1776,
-            "Text": "what we think of calling a function is not much more than syntactic sugar, equivalent to a function application"
+            "Text": "what we think of calling a function is not much more than syntactic sugar, equivalent to a function application",
+            "Timestamp": "2018-01-10 15:19:44"
         },
         {
             "End": 1807,
             "Start": 1806,
-            "Text": "The process of making a function understand and handle partial application is called currying."
+            "Text": "The process of making a function understand and handle partial application is called currying.",
+            "Timestamp": "2018-01-10 15:22:24"
         },
         {
             "End": 1812,
             "Start": 1809,
-            "Text": "Currying has nothing to do with the spicy Indian dish; it comes from the name of the mathematician Haskell Curry. (The Haskell programming language is also named after him.) Currying is a transformation process — we transform a function. An alternative name for currying could be schönfinkelisation, after the name of another mathematician, Moses Schönfinkel, the original inventor of this transformation."
+            "Text": "Currying has nothing to do with the spicy Indian dish; it comes from the name of the mathematician Haskell Curry. (The Haskell programming language is also named after him.) Currying is a transformation process — we transform a function. An alternative name for currying could be schönfinkelisation, after the name of another mathematician, Moses Schönfinkel, the original inventor of this transformation.",
+            "Timestamp": "2018-01-10 15:22:48"
         },
         {
             "End": 1843,
             "Start": 1838,
-            "Text": "Here is the general-purpose currying function: function schonfinkelize(fn) {\n    var slice = Array.prototype.slice,\n        stored_args = slice.call(arguments, 1);\n    return function () {\n        var new_args = slice.call(arguments),\n            args = stored_args.concat(new_args);\n        return fn.apply(null, args);\n    };\n}"
+            "Text": "Here is the general-purpose currying function: function schonfinkelize(fn) {\n    var slice = Array.prototype.slice,\n        stored_args = slice.call(arguments, 1);\n    return function () {\n        var new_args = slice.call(arguments),\n            args = stored_args.concat(new_args);\n        return fn.apply(null, args);\n    };\n}",
+            "Timestamp": "2018-01-10 15:24:44"
         },
         {
             "End": 1848,
             "Start": 1846,
-            "Text": "When schonfinkelize() is called the first time, it stores a private reference to the slice() method (called slice) and also stores the arguments it was called with (into stored_args), only stripping the first, because the first argument is the function being curried."
+            "Text": "When schonfinkelize() is called the first time, it stores a private reference to the slice() method (called slice) and also stores the arguments it was called with (into stored_args), only stripping the first, because the first argument is the function being curried.",
+            "Timestamp": "2018-01-10 15:25:48"
         },
         {
             "End": 1864,
             "Start": 1863,
-            "Text": "When you find yourself calling the same function and passing mostly the same parameters, then the function is probably a good candidate for currying."
+            "Text": "When you find yourself calling the same function and passing mostly the same parameters, then the function is probably a good candidate for currying.",
+            "Timestamp": "2018-01-10 15:30:11"
         },
         {
             "End": 1893,
             "Start": 1892,
-            "Text": "Self-defining functions Overwrite themselves with new bodies to do less work from the second invocation and after"
+            "Text": "Self-defining functions Overwrite themselves with new bodies to do less work from the second invocation and after",
+            "Timestamp": "2018-01-10 15:31:35"
         }
     ],
     "John Adams (McCullough, David)": [
         {
             "End": 3467,
             "Start": 3464,
-            "Text": "Chapter 6, a paragraph headed “The Encouragement of Literature, Etc.,” which was like no other declaration to be found in any constitution ever written until then, or since. It was entirely Adams’s creation, his original contribution to the constitution of Massachusetts, and he rightly took great pride in it. Wisdom and knowledge, as well as virtue,"
+            "Text": "Chapter 6, a paragraph headed “The Encouragement of Literature, Etc.,” which was like no other declaration to be found in any constitution ever written until then, or since. It was entirely Adams’s creation, his original contribution to the constitution of Massachusetts, and he rightly took great pride in it. Wisdom and knowledge, as well as virtue,",
+            "Timestamp": "2017-06-09 01:13:23"
         },
         {
             "End": 4163,
             "Start": 4162,
-            "Text": "more heavy, or giddy . . . the pulse quicker. . . ."
+            "Text": "more heavy, or giddy . . . the pulse quicker. . . .",
+            "Timestamp": "2017-06-12 23:41:38"
         },
         {
             "End": 6230,
             "Start": 6229,
-            "Text": "with it, besides praying for it, depends on the future suffrage"
+            "Text": "with it, besides praying for it, depends on the future suffrage",
+            "Timestamp": "2017-06-18 21:59:12"
         },
         {
             "End": 9037,
             "Start": 9037,
-            "Text": "Rush, “and they were mediating to place the President [pro tempore]"
+            "Text": "Rush, “and they were mediating to place the President [pro tempore]",
+            "Timestamp": "2017-06-26 16:30:50"
         },
         {
             "End": 10401,
             "Start": 10401,
-            "Text": "are the halcyon calms succeeding the storm which our"
+            "Text": "are the halcyon calms succeeding the storm which our",
+            "Timestamp": "2017-06-28 01:53:51"
         }
     ],
     "Little, Big (Crowley, John)": [
         {
             "End": 763,
             "Start": 762,
-            "Text": "imagine.” He smiled what he instantly realized to be a horridly ingratiating"
+            "Text": "imagine.” He smiled what he instantly realized to be a horridly ingratiating",
+            "Timestamp": "2017-10-10 19:07:52"
         },
         {
             "End": 2258,
             "Start": 2257,
-            "Text": "musclebound in a not quite human way and striking an absurd, orgulous"
+            "Text": "musclebound in a not quite human way and striking an absurd, orgulous",
+            "Timestamp": "2017-10-15 10:26:31"
         },
         {
             "End": 4618,
             "Start": 4617,
-            "Text": "squirrels. She’d had to learn, in order to do the Brobignagian"
+            "Text": "squirrels. She’d had to learn, in order to do the Brobignagian",
+            "Timestamp": "2017-10-30 24:10:27"
         },
         {
             "End": 8571,
             "Start": 8570,
-            "Text": "had nothing like the strength, he would Somehow have to inveigle"
+            "Text": "had nothing like the strength, he would Somehow have to inveigle",
+            "Timestamp": "2017-11-06 22:55:01"
         }
     ],
     "Sea of Poppies: A Novel (The Ibis Trilogy Book 1) (Ghosh, Amitav)": [
         {
             "End": 447,
             "Start": 447,
-            "Text": "she was relieved to find inside several lumps of hard akbari"
+            "Text": "she was relieved to find inside several lumps of hard akbari",
+            "Timestamp": "2017-08-12 09:57:19"
         },
         {
             "End": 506,
             "Start": 505,
-            "Text": "groom and his immediate family seemed pleasingly diffident"
+            "Text": "groom and his immediate family seemed pleasingly diffident",
+            "Timestamp": "2017-08-12 10:03:11"
         },
         {
             "End": 3713,
             "Start": 3712,
-            "Text": "astonishing, for example, to discover that in making mango-achar,"
+            "Text": "astonishing, for example, to discover that in making mango-achar,",
+            "Timestamp": "2017-08-19 15:22:07"
         },
         {
             "End": 6564,
             "Start": 6563,
-            "Text": "above. A stream of water came sluicing back, along the bowsprit,"
+            "Text": "above. A stream of water came sluicing back, along the bowsprit,",
+            "Timestamp": "2017-08-27 14:30:56"
         }
     ],
     "Seizing the Enigma: The Race to Break the German U-Boat Codes, 1933-1945 (Kahn, David)": [
         {
             "End": 1956,
             "Start": 1955,
-            "Text": "three-year-old Type VIIA submarine because he knew her skipper,"
+            "Text": "three-year-old Type VIIA submarine because he knew her skipper,",
+            "Timestamp": "2017-08-03 14:29:54"
         },
         {
             "End": 3460,
             "Start": 3459,
-            "Text": "Enigma messages. It worked the two ciphers like a crossruff"
+            "Text": "Enigma messages. It worked the two ciphers like a crossruff",
+            "Timestamp": "2017-08-04 19:53:03"
         },
         {
             "End": 3528,
             "Start": 3528,
-            "Text": "of the sub-infested area, it raised its speed to 10 knots."
+            "Text": "of the sub-infested area, it raised its speed to 10 knots.",
+            "Timestamp": "2017-08-04 23:34:27"
         }
     ],
     "The Brontës: Wild Genius on the Moors: The Story of a Literary Family (Barker, Juliet)": [
         {
             "End": 3299,
             "Start": 3298,
-            "Text": "dry (into ‘snowballs’) and then anointed with a thin unguent"
+            "Text": "dry (into ‘snowballs’) and then anointed with a thin unguent",
+            "Timestamp": "2017-09-05 22:05:22"
         },
         {
             "End": 4189,
             "Start": 4189,
-            "Text": "forming their own distinct and separate country. The sardonic"
+            "Text": "forming their own distinct and separate country. The sardonic",
+            "Timestamp": "2017-09-06 19:09:01"
         },
         {
             "End": 6752,
             "Start": 6751,
-            "Text": "losing his curate and rallied to his defence, drawing up a requisition"
+            "Text": "losing his curate and rallied to his defence, drawing up a requisition",
+            "Timestamp": "2017-09-10 21:51:45"
         },
         {
             "End": 6875,
             "Start": 6874,
-            "Text": "of the Associations called up at sight of those <Hill> linnet"
+            "Text": "of the Associations called up at sight of those <Hill> linnet",
+            "Timestamp": "2017-09-10 22:02:15"
         },
         {
             "End": 10071,
             "Start": 10070,
-            "Text": "Keighley and Haworth, and produce the result of our lucubrations."
+            "Text": "Keighley and Haworth, and produce the result of our lucubrations.",
+            "Timestamp": "2017-09-17 15:14:53"
         },
         {
             "End": 13873,
             "Start": 13873,
-            "Text": "school &c. is as good as I can write; it contains more pith,"
+            "Text": "school &c. is as good as I can write; it contains more pith,",
+            "Timestamp": "2017-09-20 23:05:02"
         },
         {
             "End": 19901,
             "Start": 19901,
-            "Text": "Nicholls, she asked Ellen, and would it be better to let them know"
+            "Text": "Nicholls, she asked Ellen, and would it be better to let them know",
+            "Timestamp": "2017-09-25 22:15:33"
         }
     ],
     "The City & The City (Miéville, China)": [
         {
             "End": 1615,
             "Start": 1614,
-            "Text": "other passengers. I wondered where Breach was. Our remit"
+            "Text": "other passengers. I wondered where Breach was. Our remit",
+            "Timestamp": "2017-09-02 18:48:02"
         },
         {
             "End": 2444,
             "Start": 2444,
-            "Text": "tale with spells that tainted their discards, who used astrolabes"
+            "Text": "tale with spells that tainted their discards, who used astrolabes",
+            "Timestamp": "2017-09-02 22:30:52"
         },
         {
             "End": 2887,
             "Start": 2883,
-            "Text": "once ‘How d’you know Orciny’s on our side?’ she just laughed and said ‘I don’t, they’re not.’ She wouldn’t tell me a lot. I didn’t want to know. She didn’t talk about it much at all. I thought she might be crossing, through some of these places, but…” “When did you last see her?” “I don’t know. A few days before"
+            "Text": "once ‘How d’you know Orciny’s on our side?’ she just laughed and said ‘I don’t, they’re not.’ She wouldn’t tell me a lot. I didn’t want to know. She didn’t talk about it much at all. I thought she might be crossing, through some of these places, but…” “When did you last see her?” “I don’t know. A few days before",
+            "Timestamp": "2017-09-03 09:14:02"
         },
         {
             "End": 4170,
             "Start": 4169,
-            "Text": "more references to other writers and to her own essays. Her idiolect"
+            "Text": "more references to other writers and to her own essays. Her idiolect",
+            "Timestamp": "2017-09-03 21:22:26"
         }
     ],
     "The Devotion of Suspect X: A Detective Galileo Novel (Detective Galileo Series Book 1) (Higashino, Keigo)": [
         {
             "End": 763,
             "Start": 763,
-            "Text": "Light spilled from the apartment window, and Kusanagi"
+            "Text": "Light spilled from the apartment window, and Kusanagi",
+            "Timestamp": "2017-08-27 23:58:30"
         }
     ],
     "The Last Samurai (DeWitt, Helen)": [
         {
             "End": 1218,
             "Start": 1217,
-            "Text": "lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what’s"
+            "Text": "lieder with my Uncle Buddy, Jesus, Buddy, said my mother, what’s",
+            "Timestamp": "2017-07-05 02:07:37"
         },
         {
             "End": 6612,
             "Start": 6612,
-            "Text": "least. I freely admit that I have none of the uxorious"
+            "Text": "least. I freely admit that I have none of the uxorious",
+            "Timestamp": "2017-07-18 02:13:03"
         }
     ],
     "The Occult (Wilson, Colin)": [
         {
             "End": 315,
             "Start": 315,
-            "Text": "man is more deeply moved by meaning than by accident."
+            "Text": "man is more deeply moved by meaning than by accident.",
+            "Timestamp": "2018-01-08 01:06:10"
         },
         {
             "End": 359,
             "Start": 359,
-            "Text": "He must turn increasingly inward. That is, he must turn to the hidden levels of his being,"
+            "Text": "He must turn increasingly inward. That is, he must turn to the hidden levels of his being,",
+            "Timestamp": "2018-01-08 01:11:50"
         },
         {
             "End": 467,
             "Start": 465,
-            "Text": "The power to be derived from this ‘fearful passionless force’ is only incidentally a power over things and people. It is basically power over oneself, contact with some ‘source of power, meaning and purpose’ in the subconscious mind."
+            "Text": "The power to be derived from this ‘fearful passionless force’ is only incidentally a power over things and people. It is basically power over oneself, contact with some ‘source of power, meaning and purpose’ in the subconscious mind.",
+            "Timestamp": "2018-01-08 11:13:13"
         },
         {
             "End": 515,
             "Start": 514,
-            "Text": "we are dealing with a faculty that may be called a sixth sense, a subconscious faculty by comparison with which our powers of conscious observation are clumsy and inaccurate."
+            "Text": "we are dealing with a faculty that may be called a sixth sense, a subconscious faculty by comparison with which our powers of conscious observation are clumsy and inaccurate.",
+            "Timestamp": "2018-01-08 11:17:34"
         },
         {
             "End": 571,
             "Start": 570,
-            "Text": "A poet is simply a man in whom the links with our animal past are still strong."
+            "Text": "A poet is simply a man in whom the links with our animal past are still strong.",
+            "Timestamp": "2018-01-08 11:23:11"
         },
         {
             "End": 603,
             "Start": 602,
-            "Text": "This sense of ‘meanings’ that are not apparent to ordinary consciousness is experienced by everyone at some time or another."
+            "Text": "This sense of ‘meanings’ that are not apparent to ordinary consciousness is experienced by everyone at some time or another.",
+            "Timestamp": "2018-01-08 11:34:51"
         },
         {
             "End": 708,
             "Start": 705,
-            "Text": "there is a kind of ‘psychic ether’ that carries mental vibrations as the ‘luminiferous ether’ is supposed to carry light. This I would define as the fundamental proposition of magic or occultism, and perhaps the only essential one. It will be taken for granted throughout this book."
+            "Text": "there is a kind of ‘psychic ether’ that carries mental vibrations as the ‘luminiferous ether’ is supposed to carry light. This I would define as the fundamental proposition of magic or occultism, and perhaps the only essential one. It will be taken for granted throughout this book.",
+            "Timestamp": "2018-01-09 09:14:13"
         },
         {
             "End": 713,
             "Start": 712,
-            "Text": "‘Objectivity’ causes power to flow into the soul, a surge of strength, and contact with the vast, strange forces that surround us."
+            "Text": "‘Objectivity’ causes power to flow into the soul, a surge of strength, and contact with the vast, strange forces that surround us.",
+            "Timestamp": "2018-01-09 09:15:39"
         }
     ],
     "The Stone Sky (The Broken Earth) (Jemisin, N. K.)": [
         {
             "End": 2219,
             "Start": 2219,
-            "Text": "from his canteen. When he lowers it, he looks bemused."
+            "Text": "from his canteen. When he lowers it, he looks bemused.",
+            "Timestamp": "2017-12-27 16:20:40"
         }
     ]
 }

@@ -24,3 +24,23 @@ h3 {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
 }
+
+/* http://stackoverflow.com/questions/10428720/how-to-keep-indent-for-second-line-in-ordered-lists-via-css */
+ul {
+    counter-reset: foo;
+    display: table;
+}
+
+ul > li {
+    counter-increment: foo;
+    display: table-row;
+    list-style: none;
+}
+
+ul > li::before {
+    content: "◦";
+    display: table-cell; /* aha! */
+    text-align: right;
+    padding-right: .3em;
+}
+

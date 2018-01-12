@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Kindle Highlights</title>
+
+        <script src="d3.v4.min.js" charset="utf-8"></script>
+        <script src="moment.js" charset="utf-8"></script>
+
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="skeleton.css" />
+        <link rel="stylesheet" href="custom.css" />
+        
+    </head>
+
+    <body>
+        
+        <div class="container" id="main">
+            <div class="row title">
+                <h1>Kindle Highlights</h1>
+            </div>
+        </div>
+        
+        <script>
+         var container = d3.select('#main'),
+             ul = container.append('ul'),
+             feed_hl = [],
+             cols_all = Object.values({
+                 Red2    : '#c0392b',
+                 Orange2 : '#d35400',
+                 Yellow2 : '#f39c12',
+                 GreenB2 : '#27ae60',
+                 GreenA2 : '#16a085',
+                 Blue2   : '#2980b9',
+                 Purple2 : '#8e44ad',
+                 Black2  : '#2c3e50'
+             }),
+             ncol = cols_all.length,
+             col_lookup = {};
+
+         var parse_citation = function(citation) {
+             // The regex matches strings of the form
+             //   .*(Last, First)$
+             // and reorders the names.
+             citation = citation.replace(/\(([\w.]+), ([\w. ]+)\)$/, '($2 $1)')
+             
+             // Remove everything after the final '('
+             var title = citation.replace(/ \([\w. ]*\)$/, ''),
+                 // Remove everything before the final '('
+                 author = citation.replace(/.*\(([\w. ]+)\)$/, '$1');
+
+             return {
+                 title: title,
+                 author: author
+             }
+         }
+
+         d3.json('bib.json', function(bib) {
+             var citations = Object.keys(bib),
+                 preview_width = 70,
+                 raw_citation,  // Citation string provided by Kindle
+                 citation,      // An object with a title and an author
+                 all_hl,        // An array of highlights
+                 hl,
+                 count = 0,     // Counting of unique sources, for color assignment
+                 offset,
+                 hash;
+
+             while (citations.length) {
+                 // Parse citation
+                 raw_citation = citations.shift();
+                 citation = parse_citation(raw_citation);
+                 
+                 all_hl   = bib[raw_citation];
+
+                 while (all_hl.length) {
+                     hl = all_hl.shift();
+                     hl.citation = citation;
+                     feed_hl.push(hl);
+                 }
+
+             }
+
+             feed_hl = feed_hl.sort(function(a, b) {
+                 if (a.Timestamp < b.Timestamp) {
+                     return -1;
+                 } else if (a.Timestamp > b.Timestamp) {
+                     return 11;
+                 } return 0;
+             }).reverse();
+
+             while (feed_hl.length) {
+                 hl = feed_hl.shift();
+                 offset = hl.Text.substring(0, preview_width).split('').reverse().join('').indexOf(' ');
+                 hash = hl.citation.author + hl.citation.title;
+                 if (!Object.keys(col_lookup).includes(hash)) {
+                     col_lookup[hash] = cols_all[count % ncol];
+                     count += 1;
+                 }
+                 ul.append('li')
+                   .attr('class', 'space')
+                   .html('"' + hl.Text.substring(0, preview_width - offset - 1) + '..."<br />')
+                   .append('span')
+                   .style('font-size', '85%')
+                   .style('color', col_lookup[hash])
+                   .html(' ' + hl.citation.author + ' in <em>' + hl.citation.title + '</em>, saved ' + moment(hl.Timestamp).fromNow() + '.');
+             }
+         });
+        </script>
+        
+    </body>
+</html>
+        

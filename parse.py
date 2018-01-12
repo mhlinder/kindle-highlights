@@ -100,9 +100,10 @@ class Bibliography:
             source = self.sources[citation]
             s = []
             for segment in source.segments:
-                seg = {'Start' : segment.start,
-                       'End'   : segment.end,
-                       'Text'  : segment.text}
+                seg = {'Start'     : segment.start,
+                       'End'       : segment.end,
+                       'Text'      : segment.text,
+                       'Timestamp' : segment.timestamp}
                 s.append(seg)
             bib[citation] = s
         if f is None:
